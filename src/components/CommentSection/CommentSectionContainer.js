@@ -7,11 +7,9 @@ import "./Comment.css";
 const CommentSection = props => {
   // Add state for the comments
 
-  const commentsData = useState(props.comments); // use useState or not? just props.comments?
-  // Why do we break apart state like this? I thought it was all
-  // supposed to be top-level.
+  const [commentsData] = useState(props.comments);
 
-  console.log("commentsData: ");
+  console.log("commentsData = ");
   console.log(commentsData);
 
   return (
