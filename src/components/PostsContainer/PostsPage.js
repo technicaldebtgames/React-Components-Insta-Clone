@@ -16,7 +16,7 @@ const PostsPage = () => {
   return (
     <div className="posts-container-wrapper">
       {posts.map(postData => {
-        return <Post post={postData}/>;
+        return <Post key={postData.imageUrl} post={postData}/>;
       })}
     </div>
   );

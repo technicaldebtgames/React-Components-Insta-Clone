@@ -7,6 +7,9 @@ import "./Comment.css";
 const CommentSection = props => {
   // Add state for the comments
 
+  console.log("props value in CommentSection = ")
+  console.log(props);
+  
   const [commentsData] = useState(props.comments);
 
   console.log("commentsData = ");
@@ -14,8 +17,8 @@ const CommentSection = props => {
 
   return (
     <div>
-      {commentsData.map(commentData => {
-        return <Comment comment={commentData}/>
+      {commentsData.map((commentData, index) => {
+        return <Comment key={index} comment={commentData}/>
       })}
       <CommentInput />
     </div>
