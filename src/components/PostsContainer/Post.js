@@ -10,6 +10,8 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
 
+  // trying to fix other issue before i can get to likes
+
   return (
     <div className="post-border">
       <PostHeader
